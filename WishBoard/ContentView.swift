@@ -11,6 +11,15 @@ struct ContentView: View {
     var body: some View {
         MyBoard()
     }
+    
+    init() {
+        for familyName in UIFont.familyNames {
+                print("Family: \(familyName)")
+                for fontName in UIFont.fontNames(forFamilyName: familyName) {
+                    print("   Font: \(fontName)")
+                }
+            }
+    }
 }
 
 #Preview {

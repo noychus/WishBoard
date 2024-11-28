@@ -10,13 +10,13 @@ import SwiftUI
 
 extension Font {
     enum Title {
-        static let h1Bold25 = Font.custom("FONTSPRINGDEMO-RocGroteskExtraWideExtraBoldRegular", size: 25)
-        static let h2Semibold21 = Font.custom("FONTSPRINGDEMO-RocGroteskExtraWideMediumRegular", size: 21)
-        static let h3Regular21 = Font.custom("FONTSPRINGDEMO-RocGroteskExtraWideRegular", size: 21)
-        static let h4Bold17 = Font.custom("FONTSPRINGDEMO-RocGroteskExtraWideExtraBoldRegular", size: 17)
-        static let h5Semibold17 = Font.custom("FONTSPRINGDEMO-RocGroteskExtraWideMediumRegular", size: 17)
-        static let h6Semibold12 = Font.custom("FONTSPRINGDEMO-RocGroteskExtraWideMediumRegular", size: 12)
-        static let h7Semibold30 = Font.custom("FONTSPRINGDEMO-RocGroteskExtraWideMediumRegular", size: 30)
+        static let h1Bold25 = Font.custom("Unbounded-Bold", size: 25)
+        static let h2Semibold21 = Font.custom("Unbounded-SemiBold", size: 21)
+        static let h3Regular21 = Font.custom("Unbounded-Regular", size: 21)
+        static let h4Bold17 = Font.custom("Unbounded-Bold", size: 17)
+        static let h5Semibold17 = Font.custom("Unbounded-Medium", size: 17)
+        static let h6Semibold12 = Font.custom("Unbounded-Regular", size: 12)
+        static let h7Semibold30 = Font.custom("Unbounded-Medium", size: 30)
     }
     
     enum Text {

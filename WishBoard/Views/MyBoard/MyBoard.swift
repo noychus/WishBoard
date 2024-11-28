@@ -16,7 +16,7 @@ struct MyBoard: View {
                 .ignoresSafeArea()
             
             ScrollView(.vertical, showsIndicators: false) {
-                VStack(alignment: .center, spacing: 32) {
+                VStack(alignment: .center, spacing: 16) {
                     title(titleName)
                     
                     HStack(alignment: .top, spacing: 8) {
@@ -26,6 +26,8 @@ struct MyBoard: View {
                         VStack(spacing: 0) {
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack(spacing: 8) {
+                                    addCellButton()
+                                    
                                     scrollCell("Xmas", 5)
                                     
                                     scrollCell("B-day",11)
@@ -45,25 +47,110 @@ struct MyBoard: View {
                     }
                     .frame(width: UIScreen.main.bounds.width, height: 260)
                     
-                    VStack(alignment: .leading) {
-                        Image("switchJOYCON")
+                    VStack {
+                        cardItem(image: "eburet", name: "Eburet", disc: "Table", price: "280")
+                        
+                        cardItem(image: "switchJOYCON", name: "JoyCon", disc: "For nintendo switch", price: "149")
+                    }
+                    
+                    /*
+                    VStack(alignment: .leading, spacing: 8) {
+                        Image("eburet")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: UIScreen.main.bounds.width - 16)
+                            .frame(width: UIScreen.main.bounds.width)
                         
-                        Text("Switch Joy-Con")
-                            .font(.Title.h6Semibold12)
-                            .foregroundStyle(Color.Text.dark)
-                            .padding()
+                        HStack(alignment: .top, spacing: 4) {
+                            VStack(alignment: .leading, spacing: 0) {
+                                Text("EBURET")
+                                    .font(.Title.h5Semibold17)
+                                    .foregroundStyle(Color.Text.dark)
+                                    .padding(.horizontal)
+                                
+                                Text("Table, shelf, stool")
+                                    .font(.Title.h6Semibold12)
+                                    .foregroundStyle(Color.Text.gray).opacity(0.5)
+                                    .padding(.horizontal)
+                                
+                                Spacer()
+                                
+                                Text("$280")
+                                    .font(.Title.h5Semibold17)
+                                    .foregroundStyle(Color.Text.dark)
+                                    .padding(16)
+                            }
+                            
+                            Spacer()
+                            
+                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                                HStack {
+                                    Text("+")
+                                        .font(.Title.h1Bold25)
+                                        .foregroundStyle(Color.Text.dark).opacity(0.8)
+                                }
+                                .frame(width: 80, height: 80)
+                                .background(Color.sulu)
+                                .clipShape(RoundedRectangle(cornerRadius: Const.cellCornerRadius))
+                                .padding(8)
+                            })
+                        }
                     }
                     .background(Color.white)
                     .clipShape(RoundedRectangle(cornerRadius: Const.cellCornerRadius))
+                     */
                     
                     Spacer()
                 }
                 .padding(.top, 48)
             }
         }
+    }
+    
+    @ViewBuilder
+    private func cardItem(image: String, name: String, disc: String, price: String) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Image(image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: UIScreen.main.bounds.width)
+            
+            HStack(alignment: .top, spacing: 4) {
+                VStack(alignment: .leading, spacing: 0) {
+                    Text(name.capitalized)
+                        .font(.Title.h5Semibold17)
+                        .foregroundStyle(Color.Text.dark)
+                        .padding(.horizontal)
+                    
+                    Text(disc)
+                        .font(.Title.h6Semibold12)
+                        .foregroundStyle(Color.Text.gray).opacity(0.5)
+                        .padding(.horizontal)
+                    
+                    Spacer()
+                    
+                    Text("$\(price)")
+                        .font(.Title.h5Semibold17)
+                        .foregroundStyle(Color.Text.dark)
+                        .padding(16)
+                }
+                
+                Spacer()
+                
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    HStack {
+                        Text("+")
+                            .font(.Title.h1Bold25)
+                            .foregroundStyle(Color.Text.dark).opacity(0.8)
+                    }
+                    .frame(width: 80, height: 80)
+                    .background(Color.sulu)
+                    .clipShape(RoundedRectangle(cornerRadius: Const.cellCornerRadius))
+                    .padding(8)
+                })
+            }
+        }
+        .background(Color.white)
+        .clipShape(RoundedRectangle(cornerRadius: Const.cellCornerRadius))
     }
     
     @ViewBuilder
@@ -89,7 +176,7 @@ struct MyBoard: View {
                 Spacer()
                 
                 Text("\(count)")
-                    .font(.Title.h2Semibold21)
+                    .font(.Title.h5Semibold17)
                     .foregroundStyle(Color.Text.dark)
             }
             .font(.Title.h6Semibold12)
@@ -113,7 +200,7 @@ struct MyBoard: View {
                 
                 HStack(spacing: 0) {
                     Text("\(count)")
-                        .font(.Title.h2Semibold21)
+                        .font(.Title.h5Semibold17)
                         .foregroundStyle(Color.Text.dark)
                     
                     Spacer()
@@ -133,22 +220,49 @@ struct MyBoard: View {
     @ViewBuilder
     private func scrollCell(_ title: String, _ count: Int) -> some View {
         VStack {
-            VStack(alignment: .leading) {
-                Text(title)
-                    .font(.Title.h6Semibold12)
-                    .foregroundStyle(Color.Text.dark)
+            VStack {
+                HStack {
+                    Text(title)
+                        .font(.Title.h6Semibold12)
+                        .foregroundStyle(Color.Text.dark)
+                    
+                    Spacer()
+                }
                 
                 Spacer()
                 
-                Text("\(count)")
-                    .font(.Title.h2Semibold21)
-                    .foregroundStyle(Color.Text.dark)
+                HStack {
+                    Text("\(count)")
+                        .font(.Title.h5Semibold17)
+                        .foregroundStyle(Color.Text.dark)
+                    
+                    Spacer()
+                }
             }
-            .padding()
+            .padding(.vertical, 8)
+            .padding(.leading,16)
         }
         .frame(width: 100, height: 100)
         .background(Color.flower)
         .clipShape(RoundedRectangle(cornerRadius: Const.cellCornerRadius))
+    }
+    
+    @ViewBuilder
+    private func addCellButton() -> some View {
+        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            ZStack(alignment: .center) {
+                Text("+")
+                    .font(.Title.h1Bold25)
+                    .foregroundStyle(Color.flower).opacity(0.8)
+            }
+            .frame(width: 100, height: 100)
+            .overlay {
+                RoundedRectangle(cornerRadius: Const.cellCornerRadius)
+                    .stroke(style: StrokeStyle(lineWidth: 5, dash: [17, 6]))
+                    .foregroundStyle(Color.flower)
+            }
+            .clipShape(RoundedRectangle(cornerRadius: Const.cellCornerRadius))
+        })
     }
 }
 
