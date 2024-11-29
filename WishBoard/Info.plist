@@ -10,6 +10,14 @@
 		<string>Hauora-Light.ttf</string>
 		<string>Hauora-Medium.ttf</string>
 		<string>Hauora-Regular.ttf</string>
+		<string>Unbounded-Black.ttf</string>
+		<string>Unbounded-Bold.ttf</string>
+		<string>Unbounded-ExtraBold.ttf</string>
+		<string>Unbounded-ExtraLight.ttf</string>
+		<string>Unbounded-Light.ttf</string>
+		<string>Unbounded-Medium.ttf</string>
+		<string>Unbounded-Regular.ttf</string>
+		<string>Unbounded-SemiBold.ttf</string>
 	</array>
 </dict>
 </plist>
