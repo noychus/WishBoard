@@ -16,8 +16,6 @@
 		711077FA2CE8CDAE00051FF8 /* Fontspring-DEMO-rocgroteskextrawide-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 711077F72CE8CDAE00051FF8 /* Fontspring-DEMO-rocgroteskextrawide-medium.otf */; };
 		711078002CE8CDD500051FF8 /* Hauora-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 711077FD2CE8CDD500051FF8 /* Hauora-Medium.ttf */; };
 		711078062CE8CE9D00051FF8 /* Hauora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 711078072CE8CE9D00051FF8 /* Hauora-Regular.ttf */; };
-		7110780A2CE8CF1A00051FF8 /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711078092CE8CF1A00051FF8 /* Font+.swift */; };
-		7110780C2CE8D13E00051FF8 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7110780B2CE8D13E00051FF8 /* Color+.swift */; };
 		711078102CE8D5C900051FF8 /* Hauora-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 711078112CE8D5C900051FF8 /* Hauora-Light.ttf */; };
 		711078132CE8D91300051FF8 /* MyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711078122CE8D91300051FF8 /* MyBoard.swift */; };
 		71592F542CF8D9CF00EC43E4 /* Unbounded-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71592F4C2CF8D9CF00EC43E4 /* Unbounded-SemiBold.ttf */; };
@@ -28,6 +26,7 @@
 		71592F592CF8D9CF00EC43E4 /* Unbounded-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71592F512CF8D9CF00EC43E4 /* Unbounded-ExtraBold.ttf */; };
 		71592F5A2CF8D9CF00EC43E4 /* Unbounded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71592F522CF8D9CF00EC43E4 /* Unbounded-Medium.ttf */; };
 		71592F5B2CF8D9CF00EC43E4 /* Unbounded-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71592F532CF8D9CF00EC43E4 /* Unbounded-Black.ttf */; };
+		719D402F2CF9CF2E005D7CA1 /* UISystem in Frameworks */ = {isa = PBXBuildFile; productRef = 719D402E2CF9CF2E005D7CA1 /* UISystem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +41,6 @@
 		711077FD2CE8CDD500051FF8 /* Hauora-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hauora-Medium.ttf"; sourceTree = "<group>"; };
 		711078012CE8CDEC00051FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		711078072CE8CE9D00051FF8 /* Hauora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hauora-Regular.ttf"; sourceTree = "<group>"; };
-		711078092CE8CF1A00051FF8 /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
-		7110780B2CE8D13E00051FF8 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		711078112CE8D5C900051FF8 /* Hauora-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hauora-Light.ttf"; sourceTree = "<group>"; };
 		711078122CE8D91300051FF8 /* MyBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBoard.swift; sourceTree = "<group>"; };
 		71592F4C2CF8D9CF00EC43E4 /* Unbounded-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Unbounded-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -54,6 +51,7 @@
 		71592F512CF8D9CF00EC43E4 /* Unbounded-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Unbounded-ExtraBold.ttf"; sourceTree = "<group>"; };
 		71592F522CF8D9CF00EC43E4 /* Unbounded-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Unbounded-Medium.ttf"; sourceTree = "<group>"; };
 		71592F532CF8D9CF00EC43E4 /* Unbounded-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Unbounded-Black.ttf"; sourceTree = "<group>"; };
+		719D402C2CF9CA42005D7CA1 /* UISystem */ = {isa = PBXFileReference; lastKnownFileType = text; name = UISystem; path = Modules/UISystem; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719D402F2CF9CF2E005D7CA1 /* UISystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +71,7 @@
 			children = (
 				711077E42CE8CC1A00051FF8 /* WishBoard */,
 				711077E32CE8CC1A00051FF8 /* Products */,
+				719D402D2CF9CF2E005D7CA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,11 +86,11 @@
 		711077E42CE8CC1A00051FF8 /* WishBoard */ = {
 			isa = PBXGroup;
 			children = (
+				719D402C2CF9CA42005D7CA1 /* UISystem */,
 				711078012CE8CDEC00051FF8 /* Info.plist */,
 				711077E52CE8CC1A00051FF8 /* WishBoardApp.swift */,
 				711077E72CE8CC1A00051FF8 /* ContentView.swift */,
 				711078142CE8E7A500051FF8 /* Views */,
-				711078082CE8CEF600051FF8 /* Styles */,
 				711077F32CE8CD4D00051FF8 /* Resources */,
 				711077E92CE8CC1D00051FF8 /* Assets.xcassets */,
 				711077EB2CE8CC1D00051FF8 /* Preview Content */,
@@ -135,15 +135,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		711078082CE8CEF600051FF8 /* Styles */ = {
-			isa = PBXGroup;
-			children = (
-				711078092CE8CF1A00051FF8 /* Font+.swift */,
-				7110780B2CE8D13E00051FF8 /* Color+.swift */,
-			);
-			path = Styles;
-			sourceTree = "<group>";
-		};
 		711078142CE8E7A500051FF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +149,13 @@
 				711078122CE8D91300051FF8 /* MyBoard.swift */,
 			);
 			path = MyBoard;
+			sourceTree = "<group>";
+		};
+		719D402D2CF9CF2E005D7CA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +174,9 @@
 			dependencies = (
 			);
 			name = WishBoard;
+			packageProductDependencies = (
+				719D402E2CF9CF2E005D7CA1 /* UISystem */,
+			);
 			productName = WishBoard;
 			productReference = 711077E22CE8CC1A00051FF8 /* WishBoard.app */;
 			productType = "com.apple.product-type.application";
@@ -244,8 +245,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7110780A2CE8CF1A00051FF8 /* Font+.swift in Sources */,
-				7110780C2CE8D13E00051FF8 /* Color+.swift in Sources */,
 				711077E82CE8CC1A00051FF8 /* ContentView.swift in Sources */,
 				711078132CE8D91300051FF8 /* MyBoard.swift in Sources */,
 				711077E62CE8CC1A00051FF8 /* WishBoardApp.swift in Sources */,
@@ -389,8 +388,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,9 +397,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = noychus.WishBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -419,8 +422,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,9 +431,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = noychus.WishBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -456,6 +463,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		719D402E2CF9CF2E005D7CA1 /* UISystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UISystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 711077DA2CE8CC1A00051FF8 /* Project object */;
 }
